@@ -1,13 +1,12 @@
 /* ===== LAYOUT ===== */
 .hero {
     position: relative;
-    width: 100vw;
-    max-width: 100vw;
+    width: 100%;
+    max-width: 100%;
     min-height: 100dvh;
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
     display: flex;
-    align-items: center;
     justify-content: center;
     overflow: hidden;
     color: var(--color-text-primary);

@@ -1,0 +1,123 @@
+.cardLinkWrapper {
+  display: block;
+  text-decoration: none;
+}
+
+.cardContainer {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.cardContainer:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-5px);
+}
+
+/* ===== IMAGE ===== */
+.imageContainer {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(
+    135deg,
+    var(--color-bg-secondary),
+    var(--color-border)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fallbackIcon {
+  color: var(--color-text-muted);
+}
+
+/* ===== CONTENT ===== */
+.projectName {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1rem 1rem 0.5rem;
+  color: var(--color-text-primary);
+}
+
+.description {
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  margin: 0 1rem 1rem;
+  line-height: 1.5;
+}
+
+/* ===== STACK ===== */
+.stackList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0 1rem 1rem;
+  list-style: none;
+}
+
+.stackList li {
+  padding: 0.25rem 0.75rem;
+  background: rgba(0, 255, 136, 0.1);
+  color: var(--color-accent);
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+}
+
+/* ===== VISIT BUTTON ===== */
+.visitButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.25rem;
+  padding: 10px 1rem;
+  width: 100%;
+  color: var(--color-text-muted);
+  border-top: 1px solid var(--color-border);
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.visitButton svg {
+  stroke: currentColor;
+}
+
+.cardContainer:hover .visitButton {
+  color: var(--color-accent);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .imageContainer {
+    height: 180px;
+  }
+
+  .projectName {
+    font-size: 1.1rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .imageContainer {
+    height: 160px;
+  }
+}

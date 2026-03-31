@@ -1,0 +1,15 @@
+.slCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: var(--space-sm);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .slCardContainer > * {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+}

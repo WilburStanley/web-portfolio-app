@@ -1,0 +1,84 @@
+.contactContainer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 750px;
+}
+
+.headText {
+  font-size: var(--text-sm);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.subText {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  color: var(--color-text-primary);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.description {
+  color: var(--color-text-secondary);
+  font-size: var(--text-base);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Group buttons for spacing */
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Main button styles */
+.contactButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: var(--color-accent);
+  color: var(--color-bg-primary);
+  border: none;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: var(--text-base);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contactButton:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-accent);
+}
+
+/* Secondary button style */
+.secondaryButton {
+  background: var(--color-bg-card);
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+}
+
+/* Optional: smaller devices tweaks */
+@media (max-width: 480px) {
+  .subText {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  .contactButton {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+  }
+}

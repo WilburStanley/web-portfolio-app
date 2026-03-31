@@ -1,0 +1,98 @@
+.topNavigation {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-md);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--color-bg-primary);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+    user-select: none;
+}
+
+.appLogo {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: var(--text-md);
+    color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.topNavigationLinks {
+    list-style: none;
+    display: flex;
+    gap: var(--space-lg);
+}
+
+.topNavigationLinks a {
+    position: relative;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.topNavigationLinks a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-accent);
+    transition: width 0.3s;
+}
+
+.topNavigationLinks a:hover {
+    color: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+.topNavigationLinks a:hover::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.mobileMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-bg-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-md) 0;
+    gap: var(--space-md);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    list-style: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.mobileMenu.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+    .topNavigationLinks {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

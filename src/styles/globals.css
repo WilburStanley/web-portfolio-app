@@ -16,6 +16,8 @@ body {
   color: var(--color-text-primary);
   line-height: 1.6;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 /* ===== TYPOGRAPHY ===== */

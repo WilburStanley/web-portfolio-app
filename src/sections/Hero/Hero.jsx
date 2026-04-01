@@ -42,7 +42,7 @@ const CONTACT_LINKS = [
 ];
 
 const SOCIAL_LINKS = [
-  { href: 'www.linkedin.com/in/wilbur-stanley-jimenez-660083383', icon: <LinkedInIcon />, label: 'LinkedIn' },
+  { href: 'https://www.linkedin.com/in/wilbur-stanley-jimenez-660083383/', icon: <LinkedInIcon />, label: 'LinkedIn' },
   { href: 'https://www.instagram.com/wilburstanley.dev/', icon: <InstagramIcon />, label: 'Instagram' },
   { href: 'https://www.facebook.com/wilbur.stanley', icon: <FacebookIcon />, label: 'Facebook' },
 ];

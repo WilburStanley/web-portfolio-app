@@ -1,7 +1,7 @@
 const projects = [
     {id : 1, name : "Social Media Video Downloader (TikTok & Facebook)", 
         description : "Web application that allows users to download videos from platforms like TikTok and Facebook using a simple URL. The backend is powered by Python, handling video processing and API requests. I implemented Google OAuth for secure authentication and created a freemium system with Free and Pro tiers using Polar.sh for payments. The app is deployed on Vercel and Render, with additional services on Google Cloud. I also used UptimeRobot to monitor uptime and prevent cold starts, ensuring better reliability and faster response times.", 
-        stackList : ["Website", "ReactJS", "Python", "Vercel (Deployment)", "Render (Backend)", "Polar.sh (Payment)", "UpTimeRobot (Monitoring)"],
+        stackList : ["Website", "ReactJS", "Python", "Vercel (Deployment)", "Render (Backend)", "Polar.sh (Payment)", "UpTimeRobot (Monitoring)", "Supabase (Database)"],
         visitLink : "https://brightlabs-downloader.vercel.app"},
     {id : 2, name : "Student Database Management", 
         description : "Java Swing desktop application with secure hashed authentication and MySQL integration for reliable data management. The system supports live search, interactive dashboards, inline editing, auto-generated student and admin IDs, school emails, and audit trail logging. The database is type-safe, modular, and configurable, with constraints on age, year level, and unique emails. Despite Java Swing’s UI limitations, the interface has been extensively modified with modern designs, reusable components, and polished visual elements for a professional look.", 

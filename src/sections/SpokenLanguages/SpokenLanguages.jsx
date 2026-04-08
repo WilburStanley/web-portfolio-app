@@ -2,12 +2,7 @@ import styles from './SpokenLanguages.module.css';
 import SLCard from '../../components/Card//SLCard/SLCard';
 import HeaderCard from '../../components/Card/HeaderCard/HeaderCard';
 
-const spokenLang = [
-    {id: 1, language : "Filipino", level : "Native"},
-    {id: 2, language : "English", level : "Fluent"},
-    {id: 3, language : "Mandarin", level : "Studying"},
-    {id: 4, language : "Japanese", level : "Studying"},
-]
+import spokenLang from '../../data/spokenLang';
 
 const SpokenLanguages = () => {
     return (

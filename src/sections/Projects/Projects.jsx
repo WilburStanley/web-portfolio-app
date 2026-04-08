@@ -18,7 +18,7 @@ const projects = [
     {id : 4, name : "FileOrganizerPro – Intelligent File Automation", 
         description : "Desktop app that automatically organizes files into categories (Images, Documents, Audio, Video, Code, etc.) and date-based folders. It features real-time file monitoring, preview mode, undo functionality, duplicate protection, and deep folder scanning, providing a fast, hands-free, and safe file organization experience.", 
         stackList : ["Python", "Tkinter"],
-        visitLink : "https://brightlabsuniversity.gumroad.com/l/FileOrganizerPro"},
+        visitLink : "https://brightlabs.gumroad.com/l/FileOrganizerPro"},
 ]
 
 const Projects = () => {
